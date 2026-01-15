@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Resetter - HWID Reset Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-gradient"></div>
+        
+        <div class="content-wrapper">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo">
+                    <h1>Purge Key Management</h1>
+                </div>
+                <p class="subtitle">Reset your HWID in seconds</p>
+            </header>
+
+            <!-- Main Card -->
+            <main class="main-card">
+                <div class="card-header">
+                    <h2>Reset HWID</h2>
+                    <p>Enter your key to reset your hardware ID</p>
+                </div>
+
+                <form id="resetForm" class="form">
+                    <!-- Key Input -->
+                    <div class="form-group">
+                        <label for="key">Key</label>
+                        <input 
+                            type="password" 
+                            id="key" 
+                            name="key" 
+                            placeholder="Enter your key"
+                            required
+                            class="form-input"
+                        >
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <span class="input-hint">Your active key for authentication</span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Reset HWID</span>
+                        <span class="btn-loader hidden"></span>
+                    </button>
+                </form>
+
+                <!-- Status Messages -->
+                <div id="statusContainer" class="status-container hidden">
+                    <div id="statusMessage" class="status-message"></div>
+                    <div id="statusDetails" class="status-details"></div>
+                </div>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message hidden">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Reset Successful!</h3>
+                    <p id="successText">Your HWID has been successfully reset.</p>
+                    <button type="button" class="reset-form-btn" id="newResetBtn">Perform Another Reset</button>
+                </div>
+            </main>
+
+            <!-- Footer Info -->
+            <div class="info-section">
+                <div class="info-box">
+                    <h3>Fast & Reliable</h3>
+                    <p>Panda HWID reset with 99.9% uptime</p>
+                </div>
+                <div class="info-box">
+                    <h3>Secure</h3>
+                    <p>Your data is encrypted and secure</p>
+                </div>
+                <div class="info-box">
+                    <h3>Simple</h3>
+                    <p>Easy to use interface for everyone</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
