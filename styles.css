@@ -24,7 +24,7 @@ html, body {
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text);
-    background: var(--dark);
+    background: transparent;
 }
 
 body {
@@ -46,33 +46,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #16213e 100%);
+    background: url('https://windowscustomization.com/wp-content/uploads/2019/01/Purple-Landscape.gif') center/cover no-repeat fixed;
     z-index: -1;
     opacity: 1;
 }
 
 .background-gradient::before {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-    border-radius: 50%;
-    top: -100px;
-    right: -100px;
-    pointer-events: none;
+    display: none;
 }
 
 .background-gradient::after {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-    bottom: -100px;
-    left: -100px;
-    pointer-events: none;
+    display: none;
 }
 
 .content-wrapper {
