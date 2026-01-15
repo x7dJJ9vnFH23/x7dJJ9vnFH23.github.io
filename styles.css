@@ -120,6 +120,7 @@ body {
     margin-bottom: 30px;
     animation: fadeIn 0.6s ease-out 0.1s both;
     border: 1px solid rgba(99, 102, 241, 0.2);
+    transition: all 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -522,4 +523,5 @@ body {
         max-width: 100%;
     }
 }
+
 
