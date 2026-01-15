@@ -117,6 +117,7 @@ body {
     padding: 45px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 60px rgba(99, 102, 241, 0.1);
     backdrop-filter: blur(10px);
+    animation: fadeIn 0.6s ease-out;
     margin-bottom: 30px;
     animation: fadeIn 0.6s ease-out 0.1s both;
     border: 1px solid rgba(99, 102, 241, 0.2);
@@ -523,5 +524,6 @@ body {
         max-width: 100%;
     }
 }
+
 
 
